@@ -7,7 +7,7 @@
     "category": "Hidden",
     "summary": "Module to group by Tags in CRM, Sales, and CRM and contacts",
     "website": "https://www.niboo.com/",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.1.0",
     "license": "AGPL-3",
     "description": """
 
