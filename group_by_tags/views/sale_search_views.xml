@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sales_order_search_group_by_tags" model="ir.ui.view">
+        <field name="name">view.sales.order.search.group_by_tags</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search/group/filter[@name='order_month']" position="after">
+                <separator/>
+                <field name="tag_ids_concatenated" invisible='1'/>
+                <filter string="Tags" name="groupby_tag_ids_concatenated"
+                context="{'group_by':'tag_ids_concatenated'}"/>
+                <field name="partner_tags_ids_concatenated" widget="many2many_tags" options="{'no_create': True}"/>
+                <filter string="Partner Tags" name="groupby_partner_tags_ids_concatenated"
+                context="{'group_by':'partner_tags_ids_concatenated'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

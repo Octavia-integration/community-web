@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sales_quotation_order_tree_group_by_tags" model="ir.ui.view">
+        <field name="name">view.sales.quotation.order.tree.group_by_tags</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="priority" eval="99"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="partner_tags_ids" widget="many2many_tags" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_sales_order_tree_group_by_tags" model="ir.ui.view">
+        <field name="name">view.sales.order.tree.group_by_tags</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="priority" eval="99"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="partner_tags_ids" widget="many2many_tags" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_sales_order_form_group_by_tags" model="ir.ui.view">
+        <field name="name">view.sales.order.form.group_by_tags</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="priority" eval="99"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="partner_tags_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

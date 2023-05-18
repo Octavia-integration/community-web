@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* group_by_tags
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-18 14:40+0000\n"
+"PO-Revision-Date: 2023-05-18 14:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead__partner_tags_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order__partner_tags_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__partner_tags_ids_concatenated
+msgid "Concatenated Partner Tags"
+msgstr "Étiquettes du Partenaire Concaténées"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead__tags_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_res_partner__category_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_res_users__category_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order__tag_ids_concatenated
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__tag_ids_concatenated
+msgid "Concatenated Tags"
+msgstr "Étiquettes Concaténées"
+
+#. module: group_by_tags
+#: model:ir.model,name:group_by_tags.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__order_create_date
+msgid "Creation Date"
+msgstr "Date de création"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:group_by_tags.field_res_partner__display_name
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order__display_name
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead__id
+#: model:ir.model.fields,field_description:group_by_tags.field_res_partner__id
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order__id
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__id
+msgid "ID"
+msgstr "Identifiant"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:group_by_tags.field_res_partner____last_update
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order____last_update
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: group_by_tags
+#: model:ir.model,name:group_by_tags.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Piste/opportunité"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_crm_lead__partner_tags_ids
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_order__partner_tags_ids
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__partner_tags_ids
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_lead_case_filter_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_lead_search_lead_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_opportunity_search_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.view_sales_order_search_group_by_tags
+msgid "Partner Tags"
+msgstr "Étiquettes du Partenaire"
+
+#. module: group_by_tags
+#: model:ir.model,name:group_by_tags.model_sale_report
+msgid "Sales Analysis Report"
+msgstr "Rapport d'analyse des ventes"
+
+#. module: group_by_tags
+#: model:ir.model,name:group_by_tags.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de vente"
+
+#. module: group_by_tags
+#: model:ir.model.fields,field_description:group_by_tags.field_sale_report__tag_ids
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_lead_case_filter_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_lead_search_lead_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.crm_opportunity_search_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.view_order_product_search_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.view_res_partner_filter_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.view_sales_order_search_group_by_tags
+msgid "Tags"
+msgstr "Étiquettes"
