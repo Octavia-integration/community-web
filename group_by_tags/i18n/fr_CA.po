@@ -78,6 +78,7 @@ msgstr "Piste/opportunité"
 #: model_terms:ir.ui.view,arch_db:group_by_tags.crm_lead_search_lead_group_by_tags
 #: model_terms:ir.ui.view,arch_db:group_by_tags.crm_opportunity_search_group_by_tags
 #: model_terms:ir.ui.view,arch_db:group_by_tags.view_sales_order_search_group_by_tags
+#: model_terms:ir.ui.view,arch_db:group_by_tags.view_order_product_search_group_by_tags
 msgid "Partner Tags"
 msgstr "Étiquettes du Partenaire"
 
