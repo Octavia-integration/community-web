@@ -10,14 +10,7 @@ class SaleReport(models.Model):
 
     order_create_date = fields.Datetime("Creation Date", readonly=True)
 
-    tag_ids = fields.Many2many("Tags", related="order_id.tag_ids", readonly=True)
     tag_ids_concatenated = fields.Char("Concatenated Tags", readonly=True)
-
-    partner_tags_ids = fields.Many2many(
-        related="order_id.partner_id.category_id",
-        string="Partner Tags",
-        readonly=True,
-    )
     partner_tags_ids_concatenated = fields.Char(
         "Concatenated Partner Tags",
         readonly=True,
@@ -30,9 +23,18 @@ class SaleReport(models.Model):
         fields.update(
             {
                 "order_create_date": ", s.create_date as order_create_date",
-                "tag_ids_concatenated": ", s.tag_ids_concatenated as tag_ids_concatenated",
-                "partner_tags_ids_concatenated": ", s.partner_tags_ids_concatenated as partner_tags_ids_concatenated",
+                "tag_ids_concatenated": ", s.tag_ids_concatenated",
+                "partner_tags_ids_concatenated": ", s.partner_tags_ids_concatenated",
             }
         )
-        groupby += ", s.create_date, s.tag_ids_concatenated"
-        return super()._query(with_clause, fields, groupby, from_clause)
+        groupby += """,
+            s.create_date,
+            s.tag_ids_concatenated
+        """
+        # return super()._query(with_clause, fields, groupby, from_clause)
+        return super()._query(
+            with_clause=with_clause,
+            fields=fields,
+            groupby=groupby,
+            from_clause=from_clause,
+        )
